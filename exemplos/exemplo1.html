@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container p-3 bg-secondary">
+        <h1>Exemplo 1 </h1>
+        <p>redimensione a página para ver o comportamento</p>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-6 bg-light">
+                <h3>Coluna 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur illum magni quos nesciunt delectus odio perspiciatis veniam quaerat alias, soluta atque voluptates doloremque? Delectus voluptate nemo autem quisquam dolores.</p>
+
+            </div>
+            <div class="col-sm-4 col-lg-6 bg-light">
+                <h3>Coluna 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur illum magni quos nesciunt delectus odio perspiciatis veniam quaerat alias, soluta atque voluptates doloremque? Delectus voluptate nemo autem quisquam dolores.</p>
+                
+            </div>
+            <div class="col-sm-4 col-lg-12 bg-light">
+                <h3>Coluna 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur illum magni quos nesciunt delectus odio perspiciatis veniam quaerat alias, soluta atque voluptates doloremque? Delectus voluptate nemo autem quisquam dolores.</p>
+                
+            </div>
+        </div>
+        <div class="row p-3">
+            <form  class="form col-sm-8 offset-sm-2">
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Nome"
+                    name="nome" id="nome">
+                    <label for="nome" class="form-label">Nome</label>
+                </div>
+
+                <div class="form-floating mt-3 mb-3">
+                    <input type="number" class="form-control" placeholder="Salário"
+                    name="salario" id="salario" min="0" step="0.1">
+                    <label for="salario" class="form-label">Salário</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="submit" class="btn btn-primary" >
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
