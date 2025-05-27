@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+
+    <title>Formularios</title>
+</head>
+
+<body>
+
+
+    <form action="" class="m-auto sm:w-200 mt-10">
+        <h1 class="text-xl font-bold">Escola Virtual</h1>
+        <h2>Formulário de pré matrícula</h2>
+
+        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box border p-4">
+            <legend>Dados Pessoais</legend>
+
+
+            <label class="label" for="nome">Nome</label>
+            <input type="text" class="input" id="nome">
+
+            <label class="label" for="data-nasc">Data de Nascimento</label>
+            <input type="date" class="input" placeholder="" id="data-nasc">
+
+
+
+
+            <label class="label" for="nome-mae">Nome da mãe</label>
+            <input type="text" class="input" id="nome-mae">
+
+            <label class="label" for="nome-pai">Nome da pai</label>
+            <input type="text" class="input" id="nome-pai">
+
+
+            <section class="grid grid-cols-9 gap-2">
+                <label class="label" for="">Telefone</label>
+                <input type="text" id="ddd" class="input" placeholder="ddd">
+
+                <input type="text" class="input col-span-4 w-full" id="tel" placeholder="Tel">
+                <input type="text" id="ramal" class="input w-full col-span-3" placeholder="Ramal">
+
+            </section>
+
+            </section>
+        </fieldset>
+        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box border p-4">
+            <legend>Informações de matrícula</legend>
+
+            <section class="flex justify-around gap-2">
+                <article class="flex flex-col">
+                    <label class="label" for="escolaridade">Série</label>
+                    <select name="" class="select" id="escolaridade" required>
+                        <option value="none" disabled selected>Escolha</option>
+
+                        <option value="pre-escola">Pré escola</option>
+                        <option value="ensino-fundamental">Ensino Fundamental</option>
+                    </select>
+                </article>
+                <article class="flex flex-col">
+                    <label class="label">Turno</label>
+
+                    <label class="label">
+                        <input type="radio" class="radio radio-neutral radio-xs" name="turno" id="turno" value="manha">
+                        Manhã
+                    </label>
+                    <label class="label">
+                        <input type="radio" class="radio radio-neutral radio-xs" name="turno" id="turno" value="tarde">
+                        Tarde
+                    </label>
+
+                </article>
+
+                <article class="flex flex-col gap-1">
+                    <label class="label">Atividades Extra Curriculares</label>
+
+                    <label class="label" for="info"><input type="checkbox" id="info" value="informatica"
+                            class="checkbox checkbox-sm">Informática</label>
+                    <label class="label" for="mus"><input type="checkbox" id="mus" value="musica"
+                            class="checkbox checkbox-sm">Musica</label>
+                    <label class="label" for="balet"><input type="checkbox" id="balet" value="balet"
+                            class="checkbox checkbox-sm">Balet</label>
+                    <label class="label" for="pin"><input type="checkbox" id="pin" value="pintura"
+                            class="checkbox checkbox-sm">Pintura</label>
+                    <label class="label" for="judo"><input type="checkbox" id="judo" value="judo"
+                            class="checkbox checkbox-sm">Judô</label>
+                    <label class="label" for="fut"><input type="checkbox" id="fut" value="futebol"
+                            class="checkbox checkbox-sm">Futebol</label>
+                </article>
+            </section>
+
+        </fieldset>
+
+        <section class="flex justify-center gap-10 mt-4">
+            <input class="btn btn-success" type="submit" name="" id="" value="Envia Formulário">
+            <input class="btn btn-error" type="reset" name="" id="" value="Limpa Campos">
+        </section>
+    </form>
+
+
+
+</body>
+
+</html>
