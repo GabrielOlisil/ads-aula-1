@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Atividade 1</title>
+</head>
+
+<body>
+    <main class="md:w-200 m-auto mt-10">
+
+        <a href="../../index.html" class="bg-base-300 text-base btn">Home</a>
+        <section class="mt-4">
+            <h1>Consulta Saldo</h1>
+            <div class="divider"></div>
+
+            <div class="grid grid-cols-5 gap-4">
+
+
+                <label class="floating-label col-span-4">
+                    <span>Saldo</span>
+                    <input type="number" id="saldo" placeholder="Saldo" class="input w-full" />
+                </label>
+
+                <button class="btn btn-primary" id="calculate">Calcular</button>
+
+                <input type="text" id="result" placeholder="Resultado" readonly  class="input col-span-5 w-full">
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/atividade1.js"></script>
+</body>
+
+</html>
