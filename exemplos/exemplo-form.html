@@ -16,7 +16,7 @@
 
     <section class="sm:w-200 m-auto pt-10">
 
-        
+
         <a href="../index.html" class="btn btn-primary">Home</a>
     </section>
 
@@ -45,11 +45,12 @@
 
 
             <section class="grid grid-cols-9 gap-2">
-                <label class="label" for="">Telefone</label>
+                <label class="label">Telefone</label>
                 <input type="text" id="ddd" class="input" placeholder="ddd">
 
                 <input type="text" class="input col-span-4 w-full" id="tel" placeholder="Tel">
                 <input type="text" id="ramal" class="input w-full col-span-3" placeholder="Ramal">
+                <span id="dica" class="col-span-9"></span>
 
             </section>
 
@@ -67,6 +68,7 @@
                         <option value="pre-escola">Pré escola</option>
                         <option value="ensino-fundamental">Ensino Fundamental</option>
                     </select>
+                    <p id="escol"></p>
                 </article>
                 <article class="flex flex-col">
                     <label class="label">Turno</label>
@@ -79,6 +81,8 @@
                         <input type="radio" class="radio radio-neutral radio-xs" name="turno" id="turno" value="tarde">
                         Tarde
                     </label>
+
+                    <button id="btTurno" class="btn btn-neutral self-stretch">Turno</button>
 
                 </article>
 
@@ -108,6 +112,8 @@
         </section>
     </form>
 
+
+    <script src="../scripts/form_scripts.js"></script>
 
 
 </body>
